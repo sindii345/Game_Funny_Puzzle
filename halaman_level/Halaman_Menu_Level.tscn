@@ -1,0 +1,253 @@
+[gd_scene format=3 uid="uid://q48tgvgyuugl"]
+
+[ext_resource type="Texture2D" uid="uid://l1iop64b0ic3" path="res://Background/latar_belakang.png" id="1_2tgad"]
+[ext_resource type="Script" uid="uid://bf241e88cavil" path="res://halaman_level/halaman_menu_level.gd" id="1_s5tbh"]
+[ext_resource type="Texture2D" uid="uid://crkdttonw35cv" path="res://Background/papan_pengaturan.png" id="2_cfsgk"]
+[ext_resource type="Texture2D" uid="uid://hi6e0v6y62gk" path="res://button/bintang_kuning.png" id="3_4lddl"]
+[ext_resource type="Texture2D" uid="uid://c22740i6ac2w" path="res://button/btn_close.png" id="4_o6apq"]
+[ext_resource type="Texture2D" uid="uid://c31tfart05ce7" path="res://button/level 1.png" id="5_s5tbh"]
+[ext_resource type="Texture2D" uid="uid://bjulq0fc70xwq" path="res://button/2_buka.png" id="6_o6apq"]
+[ext_resource type="Texture2D" uid="uid://bnuhychu31cdi" path="res://button/2_kunci.png" id="7_8ky2i"]
+[ext_resource type="Texture2D" uid="uid://dsmr00fqnkwdc" path="res://button/3_buka.png" id="8_4lddl"]
+[ext_resource type="Texture2D" uid="uid://nq7vr1hnogat" path="res://button/3_kunci.png" id="9_lxf8r"]
+[ext_resource type="Texture2D" uid="uid://bomn8way1curb" path="res://button/btn_pengaturan 1.png" id="11_4lddl"]
+[ext_resource type="Texture2D" uid="uid://loa0vsbdkksq" path="res://button/btn_kembali.png" id="12_lxf8r"]
+[ext_resource type="Texture2D" uid="uid://bnnqf7rh8lccs" path="res://button/musik.png" id="13_2bs14"]
+[ext_resource type="Texture2D" uid="uid://bk0x37l4dau3b" path="res://button/musik_mati.png" id="14_fyy3t"]
+[ext_resource type="Texture2D" uid="uid://c0d5kcaesrmyq" path="res://button/sound.png" id="15_wqlq1"]
+[ext_resource type="Texture2D" uid="uid://bn0o6sxobbg2o" path="res://button/sound_mati.png" id="16_s3qrw"]
+[ext_resource type="Texture2D" uid="uid://1y2odwiwf04o" path="res://button/replay.png" id="17_58xua"]
+
+[node name="HalamanMenuLevel" type="Node2D" unique_id=2032428001]
+script = ExtResource("1_s5tbh")
+tex_bintang_kuning_kecil = ExtResource("3_4lddl")
+
+[node name="latar_belakang" type="TextureRect" parent="." unique_id=69336711]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_right = 713.0
+offset_bottom = 1275.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_2tgad")
+expand_mode = 1
+
+[node name="papan_level" type="TextureRect" parent="." unique_id=172917738]
+offset_left = 126.0
+offset_top = 263.0
+offset_right = 615.0
+offset_bottom = 959.0
+texture = ExtResource("2_cfsgk")
+expand_mode = 1
+
+[node name="btn_close" type="TextureButton" parent="papan_level" unique_id=101640686]
+layout_mode = 0
+offset_left = 416.0
+offset_top = -56.0
+offset_right = 547.0
+offset_bottom = 75.0
+texture_normal = ExtResource("4_o6apq")
+ignore_texture_size = true
+
+[node name="btn_level1" type="TextureButton" parent="papan_level" unique_id=808534012]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 87.0
+offset_right = 170.0
+offset_bottom = 221.0
+texture_normal = ExtResource("5_s5tbh")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="bintang1" type="TextureRect" parent="papan_level/btn_level1" unique_id=377643944]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 75.0
+offset_right = 55.0
+offset_bottom = 103.0
+texture = ExtResource("3_4lddl")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="bintang2" type="TextureRect" parent="papan_level/btn_level1" unique_id=442688337]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 75.0
+offset_right = 97.0
+offset_bottom = 103.0
+texture = ExtResource("3_4lddl")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="bintang3" type="TextureRect" parent="papan_level/btn_level1" unique_id=1711570478]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 75.0
+offset_right = 76.0
+offset_bottom = 103.0
+texture = ExtResource("3_4lddl")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="btn_level2" type="TextureButton" parent="papan_level" unique_id=1000902578]
+layout_mode = 0
+offset_left = 172.0
+offset_top = 97.0
+offset_right = 314.0
+offset_bottom = 210.0
+texture_normal = ExtResource("6_o6apq")
+texture_disabled = ExtResource("7_8ky2i")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="bintang1" type="TextureRect" parent="papan_level/btn_level2" unique_id=1235909920]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 65.0
+offset_right = 65.0
+offset_bottom = 93.0
+texture = ExtResource("3_4lddl")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="bintang2" type="TextureRect" parent="papan_level/btn_level2" unique_id=686145173]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 65.0
+offset_right = 107.0
+offset_bottom = 93.0
+texture = ExtResource("3_4lddl")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="bintang3" type="TextureRect" parent="papan_level/btn_level2" unique_id=137842790]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 65.0
+offset_right = 86.0
+offset_bottom = 93.0
+texture = ExtResource("3_4lddl")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="btn_level3" type="TextureButton" parent="papan_level" unique_id=1882719782]
+layout_mode = 0
+offset_left = 324.0
+offset_top = 77.0
+offset_right = 447.0
+offset_bottom = 229.0
+texture_normal = ExtResource("8_4lddl")
+texture_disabled = ExtResource("9_lxf8r")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="bintang1" type="TextureRect" parent="papan_level/btn_level3" unique_id=317867515]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 84.0
+offset_right = 54.0
+offset_bottom = 112.0
+texture = ExtResource("3_4lddl")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="bintang2" type="TextureRect" parent="papan_level/btn_level3" unique_id=196660085]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 84.0
+offset_right = 96.0
+offset_bottom = 112.0
+texture = ExtResource("3_4lddl")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="bintang3" type="TextureRect" parent="papan_level/btn_level3" unique_id=780357259]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 84.0
+offset_right = 75.0
+offset_bottom = 112.0
+texture = ExtResource("3_4lddl")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="pengaturan" type="TextureButton" parent="." unique_id=1817423347]
+offset_left = 593.0
+offset_top = 7.0
+offset_right = 711.0
+offset_bottom = 125.0
+texture_normal = ExtResource("11_4lddl")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="btn_back" type="TextureButton" parent="." unique_id=2024763395]
+offset_left = 11.0
+offset_top = 27.0
+offset_right = 101.0
+offset_bottom = 102.0
+texture_normal = ExtResource("12_lxf8r")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=558837153]
+offset_left = -2.0
+offset_top = -23.0
+offset_right = 719.0
+offset_bottom = 1276.0
+color = Color(0, 0, 0, 0.5568628)
+
+[node name="papan" type="TextureRect" parent="." unique_id=1167445357]
+offset_left = 86.0
+offset_top = 209.0
+offset_right = 625.0
+offset_bottom = 1008.0
+texture = ExtResource("2_cfsgk")
+expand_mode = 1
+
+[node name="musik" type="TextureButton" parent="papan" unique_id=1300313436]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 155.0
+offset_right = 479.0
+offset_bottom = 306.0
+toggle_mode = true
+texture_normal = ExtResource("13_2bs14")
+texture_pressed = ExtResource("14_fyy3t")
+
+[node name="sound" type="TextureButton" parent="papan" unique_id=276827126]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 327.0
+offset_right = 475.0
+offset_bottom = 465.0
+toggle_mode = true
+texture_normal = ExtResource("15_wqlq1")
+texture_pressed = ExtResource("16_s3qrw")
+
+[node name="replay" type="TextureButton" parent="papan" unique_id=661980058]
+layout_mode = 0
+offset_left = 86.0
+offset_top = 477.0
+offset_right = 474.0
+offset_bottom = 616.0
+texture_normal = ExtResource("17_58xua")
+
+[node name="btn_close" type="TextureButton" parent="papan" unique_id=1601537713]
+layout_mode = 0
+offset_left = 440.0
+offset_top = -18.0
+offset_right = 640.0
+offset_bottom = 182.0
+texture_normal = ExtResource("4_o6apq")
+ignore_texture_size = true
+
+[connection signal="pressed" from="papan_level/btn_close" to="." method="_on_btn_close_pressed"]
+[connection signal="pressed" from="papan_level/btn_level1" to="." method="_on_btn_level_1_pressed"]
+[connection signal="pressed" from="papan_level/btn_level2" to="." method="_on_btn_level_2_pressed"]
+[connection signal="pressed" from="papan_level/btn_level3" to="." method="_on_btn_level_3_pressed"]
+[connection signal="pressed" from="pengaturan" to="." method="_on_btn_setting_pressed"]
+[connection signal="pressed" from="btn_back" to="." method="_on_btn_back_pressed"]
+[connection signal="pressed" from="papan/replay" to="." method="_on_replay_pressed"]
+[connection signal="pressed" from="papan/btn_close" to="." method="_on_btn_cl_pressed"]

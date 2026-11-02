@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b8neywae6sb32"]
+
+[ext_resource type="Script" uid="uid://mid7r7phxbut" path="res://kepingan_puzzle/slot.gd" id="1_io5h1"]
+
+[node name="Slot1" type="TextureRect" unique_id=1465692359]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_io5h1")

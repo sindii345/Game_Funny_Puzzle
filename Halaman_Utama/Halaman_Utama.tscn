@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bg6mms1avko7"]
+
+[ext_resource type="Texture2D" uid="uid://b05g20cfpc0qj" path="res://Background/halaman_utama.png" id="1_iv0ho"]
+[ext_resource type="Script" uid="uid://cu3vhmpbhpbxl" path="res://Halaman_Utama/halaman_utama.gd" id="1_s8h0i"]
+[ext_resource type="Texture2D" uid="uid://c58tkjpo5o5ve" path="res://button/btn_mulai.png" id="2_qhk18"]
+
+[node name="halaman_utama" type="Node2D" unique_id=1483586658]
+script = ExtResource("1_s8h0i")
+
+[node name="HalamanUtama" type="TextureRect" parent="." unique_id=1326581517]
+offset_right = 715.0
+offset_bottom = 1264.0
+texture = ExtResource("1_iv0ho")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="btn_mulai" type="TextureButton" parent="HalamanUtama" unique_id=1968444728]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 896.0
+offset_right = 587.0
+offset_bottom = 1052.0
+texture_normal = ExtResource("2_qhk18")
+ignore_texture_size = true
+stretch_mode = 5
+
+[connection signal="pressed" from="HalamanUtama/btn_mulai" to="." method="_on_btn_mulai_pressed"]

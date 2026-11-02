@@ -1,0 +1,672 @@
+[gd_scene format=3 uid="uid://n3od40n7rkoy"]
+
+[ext_resource type="Texture2D" uid="uid://b5m132dqnrtqj" path="res://Background/papan.png" id="1_acjgh"]
+[ext_resource type="Script" uid="uid://g281rqqiaxf2" path="res://GamePlay/game_play.gd" id="1_pmmb7"]
+[ext_resource type="Texture2D" uid="uid://cvkwovepvubj4" path="res://kepingan_puzzle/nabila_keping_puzzle_2x2/download (3).png" id="2_nlhfo"]
+[ext_resource type="Texture2D" uid="uid://cc4s0njql4hd8" path="res://kepingan_puzzle/puzzle_3x3/transparan_3x3.png" id="3_kaaa4"]
+[ext_resource type="Texture2D" uid="uid://wmaygi8obfmt" path="res://kepingan_puzzle/nabila_keping_puzzle_2x2/keping_1_kiri_atas.png" id="3_v73t2"]
+[ext_resource type="Texture2D" uid="uid://d0dg7ncjnmr1u" path="res://kepingan_puzzle/nabila_keping_puzzle_2x2/keping_2_kanan_atas.png" id="4_pmmb7"]
+[ext_resource type="Texture2D" uid="uid://mgv2qq8rdigi" path="res://kepingan_puzzle/puzzle_4x4/transparan_4.png" id="4_sr3qy"]
+[ext_resource type="Texture2D" uid="uid://bq50xwmfy7iel" path="res://kepingan_puzzle/nabila_keping_puzzle_2x2/keping_3_kiri_bawah.png" id="5_e688s"]
+[ext_resource type="Texture2D" uid="uid://de4yxcslr8rhh" path="res://kepingan_puzzle/nabila_keping_puzzle_2x2/keping_4_kanan_bawah.png" id="6_ttwl4"]
+[ext_resource type="Script" uid="uid://mid7r7phxbut" path="res://kepingan_puzzle/slot.gd" id="8_ttwl4"]
+[ext_resource type="Texture2D" uid="uid://4g3fdwddta0b" path="res://kepingan_puzzle/puzzle_3x3/2.png" id="8_v5ckn"]
+[ext_resource type="Texture2D" uid="uid://duidjgbobodn4" path="res://kepingan_puzzle/puzzle_3x3/3.png" id="9_54lo8"]
+[ext_resource type="Script" uid="uid://dvmp8pai3toxf" path="res://kepingan_puzzle/kepingan.gd" id="9_kaaa4"]
+[ext_resource type="Texture2D" uid="uid://c7ddwevwx603l" path="res://kepingan_puzzle/puzzle_3x3/4.png" id="10_cpxek"]
+[ext_resource type="Texture2D" uid="uid://t7u4vodeu58r" path="res://kepingan_puzzle/puzzle_3x3/5.png" id="11_l7q0l"]
+[ext_resource type="Texture2D" uid="uid://d2e25k3vix8r4" path="res://kepingan_puzzle/puzzle_3x3/6.png" id="12_16el8"]
+[ext_resource type="Texture2D" uid="uid://cco3wduvn2e1k" path="res://kepingan_puzzle/puzzle_3x3/7.png" id="13_lqfwt"]
+[ext_resource type="Texture2D" uid="uid://jyhnb5gcn3vx" path="res://kepingan_puzzle/puzzle_3x3/8.png" id="14_3ux8n"]
+[ext_resource type="Texture2D" uid="uid://drnqchuv47ame" path="res://kepingan_puzzle/puzzle_3x3/9.png" id="15_5dwdx"]
+[ext_resource type="Texture2D" uid="uid://0qgyhnhq4t4g" path="res://kepingan_puzzle/puzzle_3x3/10.png" id="16_ebir6"]
+[ext_resource type="Texture2D" uid="uid://cejk85djov3ji" path="res://kepingan_puzzle/puzzle_4x4/potongan_1_1.png" id="18_qb6j2"]
+[ext_resource type="Texture2D" uid="uid://d3fmf6mf7tn13" path="res://kepingan_puzzle/puzzle_4x4/potongan_1_2.png" id="19_vw6j4"]
+[ext_resource type="Texture2D" uid="uid://bqnuh43ff8hs5" path="res://kepingan_puzzle/puzzle_4x4/potongan_1_3.png" id="20_4wvrl"]
+[ext_resource type="Texture2D" uid="uid://y0u02nidied3" path="res://kepingan_puzzle/puzzle_4x4/potongan_1_4.png" id="21_484b0"]
+[ext_resource type="Texture2D" uid="uid://d1o5u3gqj408j" path="res://kepingan_puzzle/puzzle_4x4/potongan_2_1.png" id="22_1gl11"]
+[ext_resource type="Texture2D" uid="uid://ckkc0yokvauw2" path="res://kepingan_puzzle/puzzle_4x4/potongan_2_2.png" id="23_6veyk"]
+[ext_resource type="Texture2D" uid="uid://cqoe0kflbka6i" path="res://kepingan_puzzle/puzzle_4x4/potongan_2_3.png" id="24_de0op"]
+[ext_resource type="Texture2D" uid="uid://b8jhyq3xovuno" path="res://kepingan_puzzle/puzzle_4x4/potongan_2_4.png" id="25_10rea"]
+[ext_resource type="Texture2D" uid="uid://drcjetd0efnjd" path="res://kepingan_puzzle/puzzle_4x4/potongan_3_1.png" id="26_fogby"]
+[ext_resource type="Texture2D" uid="uid://c5rhb42qw3scw" path="res://kepingan_puzzle/puzzle_4x4/potongan_3_2.png" id="27_koyab"]
+[ext_resource type="Texture2D" uid="uid://dycgr78o7qde5" path="res://kepingan_puzzle/puzzle_4x4/potongan_3_3.png" id="28_u8736"]
+[ext_resource type="Texture2D" uid="uid://b6w4ikhbiym07" path="res://kepingan_puzzle/puzzle_4x4/potongan_3_4.png" id="29_hvcaa"]
+[ext_resource type="Texture2D" uid="uid://b41ovwvfh5sa6" path="res://kepingan_puzzle/puzzle_4x4/potongan_4_1.png" id="30_lk1ce"]
+[ext_resource type="Texture2D" uid="uid://cg5alpynktfi2" path="res://kepingan_puzzle/puzzle_4x4/potongan_4_2.png" id="31_lqax7"]
+[ext_resource type="Texture2D" uid="uid://dg2ukn7jvr8mg" path="res://kepingan_puzzle/puzzle_4x4/potongan_4_3.png" id="32_ss5ti"]
+[ext_resource type="Texture2D" uid="uid://dayrl1y6ge2rc" path="res://kepingan_puzzle/puzzle_4x4/potongan_4_4.png" id="33_na1n2"]
+[ext_resource type="Texture2D" uid="uid://bcjaecuutafh6" path="res://button/bintang_abu.png" id="34_lqax7"]
+[ext_resource type="Texture2D" uid="uid://hi6e0v6y62gk" path="res://button/bintang_kuning.png" id="35_ss5ti"]
+[ext_resource type="Texture2D" uid="uid://bomn8way1curb" path="res://button/btn_pengaturan 1.png" id="37_qb6j2"]
+[ext_resource type="Texture2D" uid="uid://crkdttonw35cv" path="res://Background/papan_pengaturan.png" id="38_10rea"]
+[ext_resource type="Texture2D" uid="uid://bnnqf7rh8lccs" path="res://button/musik.png" id="39_fogby"]
+[ext_resource type="Texture2D" uid="uid://bk0x37l4dau3b" path="res://button/musik_mati.png" id="40_koyab"]
+[ext_resource type="Texture2D" uid="uid://c0d5kcaesrmyq" path="res://button/sound.png" id="41_u8736"]
+[ext_resource type="Texture2D" uid="uid://bn0o6sxobbg2o" path="res://button/sound_mati.png" id="42_hvcaa"]
+[ext_resource type="Texture2D" uid="uid://1y2odwiwf04o" path="res://button/replay.png" id="43_lk1ce"]
+[ext_resource type="Texture2D" uid="uid://c22740i6ac2w" path="res://button/btn_close.png" id="44_lqax7"]
+[ext_resource type="Texture2D" uid="uid://loa0vsbdkksq" path="res://button/btn_kembali.png" id="45_fogby"]
+[ext_resource type="Texture2D" uid="uid://cqd86hescv4gb" path="res://Background/next_level.png" id="48_na1n2"]
+[ext_resource type="Texture2D" uid="uid://dyyv4f0odpfeq" path="res://button/Button Lanjut (1).png" id="49_rn72i"]
+[ext_resource type="Texture2D" uid="uid://pcmsxualv2d8" path="res://button/Kembali Ke Menu (1).png" id="50_j3lkx"]
+[ext_resource type="Texture2D" uid="uid://c0t2u83ykb387" path="res://button/papan_score.png" id="51_na1n2"]
+[ext_resource type="FontFile" uid="uid://xf4yls5il5bv" path="res://font/Baloo-Regular.ttf" id="52_j3lkx"]
+[ext_resource type="Texture2D" uid="uid://oe3a46qtb5d0" path="res://button/papan_durasi.png" id="52_rn72i"]
+[ext_resource type="Texture2D" uid="uid://b4xtyl36b7h53" path="res://Background/papan_kosong.png" id="54_n71bp"]
+[ext_resource type="VideoStream" uid="uid://cr5jbdraogt3h" path="res://gif_gameover/gameover.ogv" id="55_n71bp"]
+[ext_resource type="Texture2D" uid="uid://c5taumrhc2h6h" path="res://button/btn_mainlagi.png" id="56_petbl"]
+
+[node name="game_play" type="Control" unique_id=2146430165 node_paths=PackedStringArray("keping_kiri", "keping_kanan", "node_gambar_transparan")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pmmb7")
+keping_kiri = NodePath("papan_bawah/HBoxContainer/keping_1")
+keping_kanan = NodePath("papan_bawah/HBoxContainer/keping_2")
+node_gambar_transparan = NodePath("Papan/GambarTransparan")
+hint_level_1 = ExtResource("2_nlhfo")
+hint_level_2 = ExtResource("3_kaaa4")
+hint_level_3 = ExtResource("4_sr3qy")
+kepingan_level_1 = Array[Texture2D]([ExtResource("3_v73t2"), ExtResource("4_pmmb7"), ExtResource("5_e688s"), ExtResource("6_ttwl4")])
+kepingan_level_2 = Array[Texture2D]([ExtResource("8_v5ckn"), ExtResource("9_54lo8"), ExtResource("10_cpxek"), ExtResource("11_l7q0l"), ExtResource("12_16el8"), ExtResource("13_lqfwt"), ExtResource("14_3ux8n"), ExtResource("15_5dwdx"), ExtResource("16_ebir6")])
+kepingan_level_3 = Array[Texture2D]([ExtResource("18_qb6j2"), ExtResource("19_vw6j4"), ExtResource("20_4wvrl"), ExtResource("21_484b0"), ExtResource("22_1gl11"), ExtResource("23_6veyk"), ExtResource("24_de0op"), ExtResource("25_10rea"), ExtResource("26_fogby"), ExtResource("27_koyab"), ExtResource("28_u8736"), ExtResource("29_hvcaa"), ExtResource("30_lk1ce"), ExtResource("31_lqax7"), ExtResource("32_ss5ti"), ExtResource("33_na1n2")])
+tex_bintang_kosong = ExtResource("34_lqax7")
+tex_bintang_kuning = ExtResource("35_ss5ti")
+
+[node name="Papan" type="TextureRect" parent="." unique_id=1731298318]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -1.0
+offset_right = -1.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_acjgh")
+expand_mode = 1
+
+[node name="GambarTransparan" type="TextureRect" parent="Papan" unique_id=934161386]
+layout_mode = 0
+offset_left = 63.0
+offset_top = 308.0
+offset_right = 649.0
+offset_bottom = 901.0
+expand_mode = 1
+
+[node name="level_1" type="Node2D" parent="Papan/GambarTransparan" unique_id=443071287]
+
+[node name="Slot_1" type="TextureRect" parent="Papan/GambarTransparan/level_1" unique_id=131878939]
+offset_left = -1.0
+offset_top = 1.0
+offset_right = 340.0
+offset_bottom = 337.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("3_v73t2")
+
+[node name="Slot_2" type="TextureRect" parent="Papan/GambarTransparan/level_1" unique_id=2041286994]
+offset_left = 291.0
+offset_right = 586.0
+offset_bottom = 337.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("4_pmmb7")
+
+[node name="Slot_3" type="TextureRect" parent="Papan/GambarTransparan/level_1" unique_id=697773015]
+offset_left = -1.0
+offset_top = 294.0
+offset_right = 334.0
+offset_bottom = 593.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("5_e688s")
+
+[node name="Slot_4" type="TextureRect" parent="Papan/GambarTransparan/level_1" unique_id=1886025246]
+offset_left = 288.0
+offset_top = 294.0
+offset_right = 581.0
+offset_bottom = 591.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("6_ttwl4")
+
+[node name="level_2" type="Node2D" parent="Papan/GambarTransparan" unique_id=1468379910]
+
+[node name="slot_1" type="TextureRect" parent="Papan/GambarTransparan/level_2" unique_id=2081208855]
+custom_minimum_size = Vector2(120, 120)
+offset_left = -70.0
+offset_top = -68.0
+offset_right = 270.0
+offset_bottom = 311.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("8_v5ckn")
+
+[node name="slot_2" type="TextureRect" parent="Papan/GambarTransparan/level_2" unique_id=19589751]
+custom_minimum_size = Vector2(120, 120)
+offset_left = 112.0
+offset_top = -77.0
+offset_right = 486.0
+offset_bottom = 300.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("9_54lo8")
+
+[node name="slot_3" type="TextureRect" parent="Papan/GambarTransparan/level_2" unique_id=634916201]
+custom_minimum_size = Vector2(120, 120)
+offset_left = 315.0
+offset_top = -78.0
+offset_right = 664.0
+offset_bottom = 301.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("10_cpxek")
+
+[node name="slot_4" type="TextureRect" parent="Papan/GambarTransparan/level_2" unique_id=68747749]
+custom_minimum_size = Vector2(120, 120)
+offset_left = -71.0
+offset_top = 140.0
+offset_right = 267.0
+offset_bottom = 478.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("11_l7q0l")
+
+[node name="slot_5" type="TextureRect" parent="Papan/GambarTransparan/level_2" unique_id=1675855478]
+custom_minimum_size = Vector2(120, 120)
+offset_left = 113.0
+offset_top = 147.0
+offset_right = 481.0
+offset_bottom = 475.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("12_16el8")
+
+[node name="slot_6" type="TextureRect" parent="Papan/GambarTransparan/level_2" unique_id=1994668599]
+custom_minimum_size = Vector2(120, 120)
+offset_left = 318.0
+offset_top = 98.0
+offset_right = 664.0
+offset_bottom = 423.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("13_lqfwt")
+
+[node name="slot_7" type="TextureRect" parent="Papan/GambarTransparan/level_2" unique_id=366920855]
+custom_minimum_size = Vector2(120, 120)
+offset_left = -73.0
+offset_top = 332.0
+offset_right = 268.0
+offset_bottom = 664.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("14_3ux8n")
+
+[node name="slot_8" type="TextureRect" parent="Papan/GambarTransparan/level_2" unique_id=1909493561]
+custom_minimum_size = Vector2(120, 120)
+offset_left = 116.0
+offset_top = 325.0
+offset_right = 460.0
+offset_bottom = 666.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("15_5dwdx")
+
+[node name="slot_9" type="TextureRect" parent="Papan/GambarTransparan/level_2" unique_id=2134084960]
+custom_minimum_size = Vector2(120, 120)
+offset_left = 292.0
+offset_top = 321.0
+offset_right = 675.0
+offset_bottom = 669.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("16_ebir6")
+
+[node name="level_3" type="Node2D" parent="Papan/GambarTransparan" unique_id=190027950]
+
+[node name="slot_1" type="TextureRect" parent="Papan/GambarTransparan/level_3" unique_id=471291524]
+offset_right = 161.0
+offset_bottom = 159.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("18_qb6j2")
+
+[node name="slot_2" type="TextureRect" parent="Papan/GambarTransparan/level_3" unique_id=1497255245]
+offset_left = 138.0
+offset_top = 2.0
+offset_right = 323.0
+offset_bottom = 185.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("19_vw6j4")
+
+[node name="slot_3" type="TextureRect" parent="Papan/GambarTransparan/level_3" unique_id=2085089191]
+offset_left = 301.0
+offset_top = 3.0
+offset_right = 443.0
+offset_bottom = 159.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("20_4wvrl")
+
+[node name="slot_4" type="TextureRect" parent="Papan/GambarTransparan/level_3" unique_id=907094992]
+offset_left = 421.0
+offset_top = 3.0
+offset_right = 583.0
+offset_bottom = 183.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("21_484b0")
+
+[node name="slot_5" type="TextureRect" parent="Papan/GambarTransparan/level_3" unique_id=1560106426]
+offset_left = 3.0
+offset_top = 136.0
+offset_right = 189.0
+offset_bottom = 326.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("22_1gl11")
+
+[node name="slot_6" type="TextureRect" parent="Papan/GambarTransparan/level_3" unique_id=1007313776]
+offset_left = 165.0
+offset_top = 160.0
+offset_right = 304.0
+offset_bottom = 302.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("23_6veyk")
+
+[node name="slot_7" type="TextureRect" parent="Papan/GambarTransparan/level_3" unique_id=286400308]
+offset_left = 283.0
+offset_top = 136.0
+offset_right = 458.0
+offset_bottom = 323.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("24_de0op")
+
+[node name="slot_8" type="TextureRect" parent="Papan/GambarTransparan/level_3" unique_id=1117207029]
+offset_left = 442.0
+offset_top = 158.0
+offset_right = 585.0
+offset_bottom = 302.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("25_10rea")
+
+[node name="slot_9" type="TextureRect" parent="Papan/GambarTransparan/level_3" unique_id=658327001]
+offset_left = 3.0
+offset_top = 302.0
+offset_right = 162.0
+offset_bottom = 445.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("26_fogby")
+
+[node name="slot_10" type="TextureRect" parent="Papan/GambarTransparan/level_3" unique_id=2143961321]
+offset_left = 137.0
+offset_top = 280.0
+offset_right = 332.0
+offset_bottom = 466.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("27_koyab")
+
+[node name="slot_11" type="TextureRect" parent="Papan/GambarTransparan/level_3" unique_id=1013907216]
+offset_left = 310.0
+offset_top = 302.0
+offset_right = 442.0
+offset_bottom = 440.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("28_u8736")
+
+[node name="slot_12" type="TextureRect" parent="Papan/GambarTransparan/level_3" unique_id=1610399723]
+offset_left = 420.0
+offset_top = 283.0
+offset_right = 586.0
+offset_bottom = 458.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("29_hvcaa")
+
+[node name="slot_13" type="TextureRect" parent="Papan/GambarTransparan/level_3" unique_id=1035891460]
+offset_left = 3.0
+offset_top = 422.0
+offset_right = 189.0
+offset_bottom = 591.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("30_lk1ce")
+
+[node name="slot_14" type="TextureRect" parent="Papan/GambarTransparan/level_3" unique_id=334954546]
+offset_left = 164.0
+offset_top = 443.0
+offset_right = 303.0
+offset_bottom = 591.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("31_lqax7")
+
+[node name="slot_15" type="TextureRect" parent="Papan/GambarTransparan/level_3" unique_id=1760996312]
+offset_left = 282.0
+offset_top = 415.0
+offset_right = 463.0
+offset_bottom = 590.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("32_ss5ti")
+
+[node name="slot_16" type="TextureRect" parent="Papan/GambarTransparan/level_3" unique_id=877007245]
+offset_left = 443.0
+offset_top = 437.0
+offset_right = 585.0
+offset_bottom = 589.0
+expand_mode = 1
+script = ExtResource("8_ttwl4")
+gambar_jawaban = ExtResource("33_na1n2")
+
+[node name="papan_bawah" type="TextureRect" parent="." unique_id=1533901762]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.85300004
+anchor_right = 0.5
+anchor_bottom = 0.85300004
+offset_left = -319.0
+offset_top = -114.84009
+offset_right = 321.0
+offset_bottom = 114.15991
+grow_horizontal = 2
+grow_vertical = 0
+expand_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="papan_bawah" unique_id=515077434]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 28.0
+offset_top = 30.0
+offset_right = -30.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="keping_1" type="TextureRect" parent="papan_bawah/HBoxContainer" unique_id=1544188614]
+layout_mode = 2
+size_flags_horizontal = 3
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("9_kaaa4")
+
+[node name="keping_2" type="TextureRect" parent="papan_bawah/HBoxContainer" unique_id=577243553]
+layout_mode = 2
+size_flags_horizontal = 3
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("9_kaaa4")
+
+[node name="pengaturan" type="TextureButton" parent="." unique_id=1964691046]
+layout_mode = 0
+offset_left = 583.0
+offset_top = -9.0
+offset_right = 722.0
+offset_bottom = 148.0
+texture_normal = ExtResource("37_qb6j2")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="btn_kembali" type="TextureButton" parent="." unique_id=1229027879]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 15.0
+offset_right = 134.0
+offset_bottom = 124.0
+texture_normal = ExtResource("45_fogby")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="score" type="TextureRect" parent="." unique_id=1054791954]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 175.0
+offset_right = 241.0
+offset_bottom = 256.0
+texture = ExtResource("51_na1n2")
+expand_mode = 1
+
+[node name="Label_score" type="Label" parent="score" unique_id=758989831]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 18.0
+offset_right = 163.0
+offset_bottom = 66.0
+theme_override_fonts/font = ExtResource("52_j3lkx")
+theme_override_font_sizes/font_size = 22
+
+[node name="durasi" type="TextureRect" parent="." unique_id=1712803665]
+layout_mode = 0
+offset_left = 515.0
+offset_top = 164.0
+offset_right = 684.0
+offset_bottom = 242.0
+texture = ExtResource("52_rn72i")
+expand_mode = 1
+
+[node name="Label_waktu" type="Label" parent="durasi" unique_id=194247683]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 21.0
+offset_right = 113.0
+offset_bottom = 67.0
+theme_override_fonts/font = ExtResource("52_j3lkx")
+theme_override_font_sizes/font_size = 25
+
+[node name="Timer_level" type="Timer" parent="durasi" unique_id=1298654779]
+autostart = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=543608763]
+visible = false
+layout_mode = 0
+offset_top = 1.0
+offset_right = 717.0
+offset_bottom = 1275.0
+color = Color(0, 0, 0, 0.49411765)
+
+[node name="papan" type="TextureRect" parent="." unique_id=1019992743]
+visible = false
+layout_mode = 0
+offset_left = 86.0
+offset_top = 209.0
+offset_right = 625.0
+offset_bottom = 1008.0
+texture = ExtResource("38_10rea")
+expand_mode = 1
+
+[node name="musik" type="TextureButton" parent="papan" unique_id=1417460355]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 155.0
+offset_right = 479.0
+offset_bottom = 306.0
+toggle_mode = true
+texture_normal = ExtResource("39_fogby")
+texture_pressed = ExtResource("40_koyab")
+
+[node name="sound" type="TextureButton" parent="papan" unique_id=580392677]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 327.0
+offset_right = 475.0
+offset_bottom = 465.0
+toggle_mode = true
+texture_normal = ExtResource("41_u8736")
+texture_pressed = ExtResource("42_hvcaa")
+
+[node name="replay" type="TextureButton" parent="papan" unique_id=1968685765]
+layout_mode = 0
+offset_left = 86.0
+offset_top = 477.0
+offset_right = 474.0
+offset_bottom = 616.0
+texture_normal = ExtResource("43_lk1ce")
+
+[node name="btn_close" type="TextureButton" parent="papan" unique_id=710540521]
+layout_mode = 0
+offset_left = 440.0
+offset_top = -18.0
+offset_right = 640.0
+offset_bottom = 182.0
+texture_normal = ExtResource("44_lqax7")
+ignore_texture_size = true
+
+[node name="papan_menang" type="TextureRect" parent="." unique_id=162085547]
+visible = false
+layout_mode = 0
+offset_left = 56.0
+offset_top = 284.0
+offset_right = 633.0
+offset_bottom = 810.0
+texture = ExtResource("48_na1n2")
+expand_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="papan_menang" unique_id=69390275]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -61.0
+offset_top = -284.0
+offset_right = 95.0
+offset_bottom = 467.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5372549)
+
+[node name="bintang1" type="TextureRect" parent="papan_menang" unique_id=1552439825]
+layout_mode = 0
+offset_left = 173.0
+offset_top = 207.0
+offset_right = 264.0
+offset_bottom = 300.0
+texture = ExtResource("35_ss5ti")
+expand_mode = 1
+
+[node name="bintang2" type="TextureRect" parent="papan_menang" unique_id=770689158]
+layout_mode = 0
+offset_left = 254.0
+offset_top = 203.0
+offset_right = 335.0
+offset_bottom = 301.0
+texture = ExtResource("35_ss5ti")
+expand_mode = 1
+
+[node name="bintang3" type="TextureRect" parent="papan_menang" unique_id=210747519]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 204.0
+offset_right = 410.0
+offset_bottom = 305.0
+texture = ExtResource("35_ss5ti")
+expand_mode = 1
+
+[node name="btn_next" type="TextureButton" parent="papan_menang" unique_id=176763626]
+layout_mode = 0
+offset_left = 305.0
+offset_top = 422.0
+offset_right = 493.0
+offset_bottom = 494.0
+texture_normal = ExtResource("49_rn72i")
+ignore_texture_size = true
+
+[node name="btn_back" type="TextureButton" parent="papan_menang" unique_id=1859241275]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 413.0
+offset_right = 292.0
+offset_bottom = 504.0
+texture_normal = ExtResource("50_j3lkx")
+
+[node name="LabelScoreMenang" type="Label" parent="papan_menang" unique_id=62457584]
+layout_mode = 0
+offset_left = 259.0
+offset_top = 326.0
+offset_right = 352.0
+offset_bottom = 380.0
+theme_override_colors/font_color = Color(0.27058825, 0.14509805, 0.09803922, 1)
+theme_override_fonts/font = ExtResource("52_j3lkx")
+theme_override_font_sizes/font_size = 40
+
+[node name="papan_gameover" type="TextureRect" parent="." unique_id=515339478]
+visible = false
+layout_mode = 0
+offset_left = 33.0
+offset_top = 339.0
+offset_right = 683.0
+offset_bottom = 908.0
+texture = ExtResource("54_n71bp")
+expand_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="papan_gameover" unique_id=1600151582]
+show_behind_parent = true
+layout_mode = 0
+offset_left = -38.0
+offset_top = -342.0
+offset_right = 690.0
+offset_bottom = 936.0
+color = Color(0, 0, 0, 0.627451)
+
+[node name="Label_GameOver" type="Label" parent="papan_gameover" unique_id=1231471912]
+layout_mode = 0
+offset_left = 191.0
+offset_top = 48.0
+offset_right = 471.0
+offset_bottom = 137.0
+theme_override_colors/font_color = Color(0.3137255, 0.24705882, 0.14509805, 1)
+theme_override_fonts/font = ExtResource("52_j3lkx")
+theme_override_font_sizes/font_size = 56
+text = "Game Over"
+
+[node name="VideoGameOver" type="VideoStreamPlayer" parent="papan_gameover" unique_id=1415806321]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 155.0
+offset_right = 522.0
+offset_bottom = 410.0
+stream = ExtResource("55_n71bp")
+expand = true
+loop = true
+
+[node name="BtnAyoMainLagi" type="TextureButton" parent="papan_gameover" unique_id=1993877573]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 458.0
+offset_right = 423.0
+offset_bottom = 508.0
+texture_normal = ExtResource("56_petbl")
+ignore_texture_size = true
+
+[connection signal="pressed" from="pengaturan" to="." method="_on_pengaturan_pressed"]
+[connection signal="timeout" from="durasi/Timer_level" to="." method="_on_timer_level_timeout"]
+[connection signal="toggled" from="papan/musik" to="." method="_on_musik_toggled"]
+[connection signal="toggled" from="papan/sound" to="." method="_on_sound_toggled"]
+[connection signal="pressed" from="papan/replay" to="." method="_on_replay_pressed"]
+[connection signal="pressed" from="papan/btn_close" to="." method="_on_btn_close_pressed"]
+[connection signal="pressed" from="papan_menang/btn_next" to="." method="_on_btn_next_pressed"]
+[connection signal="pressed" from="papan_menang/btn_back" to="." method="_on_btn_back_pressed"]
+[connection signal="pressed" from="papan_gameover/BtnAyoMainLagi" to="." method="_on_btn_ayo_main_lagi_pressed"]
